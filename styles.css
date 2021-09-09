@@ -1,0 +1,199 @@
+body{
+    background-color: #d3d3d3 ; 
+}
+
+.container{
+    background-color: #fff ;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.upper, .middle, .lower{
+  display: grid;
+  gap: 20px;
+  background-color: #000;
+  padding: 20px;
+}
+
+.middle, .lower{
+    margin-top: 15px;
+}
+
+
+.item1{
+    grid-column: 1/12;
+}
+
+.item2{
+    grid-column: 1/12;
+    grid-row: 2;
+}
+
+.upperUpper-container{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    background-color: #2f414f;
+}
+
+.upperUpper-item{
+    background-color: tomato;
+    padding: 10px;
+}
+
+.item11{
+    grid-column:  1/3;
+    grid-row: 1;
+}
+
+.item12{
+    grid-column: 3/9;
+}
+
+.item13{
+    grid-column: 9/12;
+}
+
+.upperLower-container{
+    display: grid;
+    padding: 10px;
+    background-color: orangered;
+}
+
+.upperLower-item{
+    background-color: orange;
+    padding: 10px;
+}
+
+.middle-item{
+    padding: 20px;
+}
+
+.item3{
+    grid-column: 1/8;
+}
+
+.item4{
+    grid-column: 8/12;
+}
+
+.lower-item{
+    background-color: rgba(186, 204, 29, 0.8);
+    padding: 20px;
+}
+
+.item5{
+    grid-column: 1/12;
+    grid-row: 1;
+}
+
+.middleLeft-container{
+    background-color: #2f414f;
+}
+
+.middleRight-container{
+    background-color: crimson;
+    
+}
+
+.bar-container{
+    display: grid;
+    gap: 10px;
+}
+
+.leftBar-item{
+    background-color: blue;
+    padding: 10px; 
+}
+
+.rightBar-item{
+    background-color: lightyellow;
+    padding: 10px;
+}
+
+.item3111{
+    grid-column: 1/6;
+}
+
+.item3112{
+    grid-column: 1/6;
+}
+
+.item3113{
+    grid-column: 6/12;
+    grid-row: 1;
+}
+
+.item3114{
+    grid-column: 6/12;
+    grid-row: 2;
+}
+
+.item3115{
+    grid-column: 1/12;
+    grid-row: 3;
+    background-color: lightblue
+}
+
+.item3116{
+    grid-column: 1/12;
+    grid-row: 1;
+}
+
+.item3117{
+    grid-column: 1/12;
+    grid-row: 2;
+}
+
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+ {
+     /* For iPad: */
+  .middle{
+      display: block;
+      background-color: yellow;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .middle{
+        display: block;
+        background-color: yellow;
+    }
+    .item3111{
+        grid-column: 1/ span 12;
+        grid-row: 1;
+    }
+    .item3112{
+        grid-column: 1/ span 12;
+        grid-row: 2;
+    }
+    .item3113{
+        grid-column: 1/ span 12;
+        grid-row: 3;
+    }
+    .item3114{
+        grid-column: 1/ span 12;
+        grid-row: 4;
+    }
+    .item3115{
+        grid-column: 1/ span 12;
+        grid-row: 5;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
